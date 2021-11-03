@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+
+:root {
+    --cor1: #000008;
+    --cor2: #000033;
+    --cor3: #0F0F33;
+    --cor4: #000054;
+    --cor5: #000094;
 }
 
 * {
@@ -10,12 +17,12 @@
 }
 
 body {
-    background-color: rgb(111, 101, 148);
+    background-color: var(--cor3);
 
 }
 
 header {
-    background-color: rgb(24, 24, 24);
+    background-color: var(--cor1);
     
     min-height: 200px;
     width: 100%;
@@ -47,19 +54,22 @@ main {
     background-color: #ffffff;
 
     min-width: 300px;
-    max-width: 750px;
+    max-width: 1050px;
 
     margin: auto;
     padding-left: 5px;
 
     border-radius: 0px 0px 3px 4px;
     box-shadow: 1px 1px 8px black;
+
+    font-family: 'Merriweather', serif;
 }
 
 main h1 {
     text-align: center;
     font-size: 1.6em;
-    margin-bottom: 10px;
+
+    padding: 30px 0px 30px 0px;
 }
 
 main p {
@@ -67,15 +77,12 @@ main p {
     line-height: 2em;
 }
 
-footer {
-    margin-top: 5px;
-    background-color: #d4cf81;
-    padding: 3px;
+main > div.poema > p {
+    line-height: 2.5em !important;
 }
 
-div.circle {
-    background-color: black;
-    max-width: 34px;
-    margin: auto;
-    border-radius: 40px;
+footer {
+    margin-top: 5px;
+    background-color: var(--cor5);
+    padding: 3px;
 }
